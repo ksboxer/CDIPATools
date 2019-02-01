@@ -1,0 +1,23 @@
+Package: CDIPATools
+Type: Package
+Title: CDI Predictive Analytics Tools
+Version: 0.1.0
+Authors@R: c(
+  person("Kristin", "Porter", , "kristin.porter@mdrc.org", c("aut", "cre")),
+  person("Mark", "Van Dok",,"mark.vandok@mdrc.org",c("aut")),
+  person("Kate", "Boxer",,"kate.boxer@mdrc.org",c("aut")),
+  person("Deni", "Chen",, "deni.chen@mdrc.org", c("aut")),
+  person("Zarni", "Htet",,"zarni.htet@mdrc.org", c("aut"))
+  )
+Maintainer: The package maintainer <zarni.htet@mdrc.org>
+Description: This package contains a suite of predictive analytics tools developed by Center for Data Insights at MDRC.
+    The tools are organically generated from different data models across different types of projects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
