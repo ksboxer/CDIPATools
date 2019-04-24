@@ -18,6 +18,9 @@ LazyData: true
 Imports: 
     knitr,
     rmarkdown,
-    testthat
+    testthat,
+    PRROC,
+    pROC,
+    caret
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
