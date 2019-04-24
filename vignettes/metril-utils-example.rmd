@@ -1,0 +1,39 @@
+---
+title: "Metrics Utils Example"
+author: "Zarni Htet + Kate Boxer"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+library(CDIPATools)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Read in Sample Dataset
+
+This dataset is contained in the data file of this package.  This dataset has been made to simulate what predictions would look like from a model, meaning it contains a column that has probability scores, and also a column that has a prediction (0/1) for binary classification, and also has a column that contains a true label that is binary
+
+```{r}
+
+## ZARNI : How do I do paths within the package?
+fake_predictions_data <- read.csv("~/CDIPATools/data/FakePredictionResults.csv",stringsAsFactors = FALSE)
+head(fake_predictions_data)
+```
+We will use the "true.risk.bin" column as true labels, and the column "est.risk.score" as the predicted probability by a model
+
+Now we will walk through and show each function in the "~/R/utils/metrics.R" file works
+
+## get_confusion_matrix
+
+We will start by showing how the get confusion metric function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_confusion_matrix(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
