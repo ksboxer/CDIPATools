@@ -37,3 +37,31 @@ We will start by showing how the get confusion metric function works.  We will s
 ```{r}
 get_confusion_matrix(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
+## get_fpr
+
+We will start by showing how the get false positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_fpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_fnr
+
+We will start by showing how the get false negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_fnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_tpr
+
+We will start by showing how the get true positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_tpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_tnr
+
+We will start by showing how the get true negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_tnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
