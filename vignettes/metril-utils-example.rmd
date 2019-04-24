@@ -39,29 +39,80 @@ get_confusion_matrix(predictions = fake_predictions_data$est.risk.score, labels 
 ```
 ## get_fpr
 
-We will start by showing how the get false positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+We will show how the get false positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
 get_fpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## get_fnr
 
-We will start by showing how the get false negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+We will show how the get false negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
 get_fnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## get_tpr
 
-We will start by showing how the get true positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+We will show how the get true positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
 get_tpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## get_tnr
 
-We will start by showing how the get true negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+We will show how the get true negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
 get_tnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_auc_roc
+
+We will show how the get auc roc function works.
+
+```{r}
+get_auc_roc(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+```
+## get_auc_pr
+
+We will show how the get auc precision recall curve function works.
+
+```{r}
+get_auc_pr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+```
+## get_precision
+
+We will show how the get precision function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_precision(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_recall
+
+We will show how the get recall function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_recall(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## get_accuracy
+
+We will show how the get precision function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
+
+```{r}
+get_accuracy(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+```
+## threshold_finder
+
+The threshold_finder function finds the optimal threshold cut-off for predictions based on a passed in metric function.  All the passed in metric functions need to take the parameters predictions,labels,and threshold.  We will show how to find the optimal threshold to maximize precision
+```{r}
+threshold_finder(get_precision, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+```
+We will show how to find the optimal threshold to maximize recall
+
+```{r}
+threshold_finder(get_recall, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+```
+We will show how to find the optimal threshold to maximize accuracy
+
+```{r}
+threshold_finder(get_accuracy, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```
