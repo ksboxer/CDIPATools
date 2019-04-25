@@ -255,7 +255,7 @@ get_accuracy <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @return numeric, value from 0-1 that is the threshold that maximizes the metric func
 
-theshold_finder <- function(func, predictions,labels){
+threshold_finder <- function(func, predictions,labels){
 
   i <- 0
   res <- data.frame()
