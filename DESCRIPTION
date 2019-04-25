@@ -15,12 +15,13 @@ Description: This package contains a suite of predictive analytics tools develop
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
     knitr,
     rmarkdown,
     testthat,
     PRROC,
     pROC,
-    caret
+    caret,
+    e1071
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1

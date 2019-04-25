@@ -1,6 +1,6 @@
 ---
 title: "Metrics Utils Example"
-author: "Zarni Htet + Kate Boxer"
+author: "Kate Boxer"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -23,7 +23,9 @@ This dataset is contained in the data file of this package.  This dataset has be
 ```{r}
 
 ## ZARNI : How do I do paths within the package?
-fake_predictions_data <- read.csv("~/CDIPATools/data/FakePredictionResults.csv",stringsAsFactors = FALSE)
+## Ans: I didn't find any examples or write up that talks about it. Since the package structure would be consistent unless sb really changes it, I have made it as a relative path. 
+
+fake_predictions_data <- read.csv("../data/FakePredictionResults.csv",stringsAsFactors = FALSE)
 head(fake_predictions_data)
 ```
 We will use the "true.risk.bin" column as true labels, and the column "est.risk.score" as the predicted probability by a model
@@ -103,6 +105,7 @@ get_accuracy(predictions = fake_predictions_data$est.risk.score, labels = fake_p
 ## threshold_finder
 
 The threshold_finder function finds the optimal threshold cut-off for predictions based on a passed in metric function.  All the passed in metric functions need to take the parameters predictions,labels,and threshold.  We will show how to find the optimal threshold to maximize precision
+
 ```{r}
 threshold_finder(get_precision, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```

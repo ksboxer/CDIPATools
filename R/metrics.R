@@ -1,6 +1,5 @@
 
-#' @description This script contains all the code for ML performance metrics
-
+# This script contains all the code for ML performance metrics
 
 #' Calculates Confusion Matrix (TP, FP, FN, TN)
 #'
@@ -12,6 +11,8 @@
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return table, table of integers with FP, FN, TP,R
+#' @export
+
 get_confusion_matrix <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
@@ -22,7 +23,7 @@ get_confusion_matrix <- function(predictions, labels, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  CM <- confusionMatrix(predictions_threshold, labels, mode = "everything")
+  CM <- caret::confusionMatrix(predictions_threshold, labels, mode = "everything")
   return(CM)
 }
 
@@ -38,6 +39,7 @@ get_confusion_matrix <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, false positive rate
+#' @export
 
 get_fpr <- function(predictions, labels, threshold){
 
@@ -63,6 +65,7 @@ get_fpr <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, false negative rate
+#' @export
 
 get_fnr <- function(predictions, labels, threshold){
 
@@ -88,6 +91,8 @@ get_fnr <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, true positive rate
+#' @export
+
 get_tpr <- function(predictions, labels, threshold){
 
   CM <- get_confusion_matrix(predictions, labels, threshold)
@@ -112,6 +117,7 @@ get_tpr <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, true negative rate
+#' @export
 
 get_tnr <- function(predictions, labels, threshold){
 
@@ -128,7 +134,7 @@ get_tnr <- function(predictions, labels, threshold){
 }
 
 
-#' Calculates AUC ROC for continious predictions, and autual predictions
+#' Calculates AUC ROC for continious predictions, and actual predictions
 #'
 #' This function takes the predictions of a model, (can be either binary 0 or 1, or continous numeric [0,1]) and
 #' calculates the roc curve, and then gets the auc under the curve given the predicted values and actual values
@@ -137,6 +143,7 @@ get_tnr <- function(predictions, labels, threshold){
 #' @param predictions list of numerics,  predicted values
 #' @param labels list of numerics, actual values/outcomes
 #' @return numeric, returns AUC ROC value
+#' @export
 
 get_auc_roc <- function(predictions, labels){
 
@@ -144,8 +151,8 @@ get_auc_roc <- function(predictions, labels){
   labels <- as.vector(labels)
 
 
-  roc_obj <- roc(labels, predictions)
-  auc_roc <- as.numeric(auc(roc_obj))
+  roc_obj <- pROC::roc(labels, predictions)
+  auc_roc <- as.numeric(pROC::auc(roc_obj))
   return(auc_roc)
 }
 
@@ -161,12 +168,13 @@ get_auc_roc <- function(predictions, labels){
 #' @param predictions list of numerics,  predicted values
 #' @param labels list of numerics, actual values/outcomes
 #' @return numeric, returns AUC precision recall value
+#' @export
 
 get_auc_pr <- function(predictions, labels){
   predictions <- as.vector(predictions)
   labels <- as.vector(labels)
 
-  auc_pr <-  pr.curve(predictions[labels==1], predictions[labels==0])
+  auc_pr <-  PRROC::pr.curve(predictions[labels==1], predictions[labels==0])
   return(auc_pr$auc.integral)
 }
 
@@ -180,6 +188,8 @@ get_auc_pr <- function(predictions, labels){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns precision value
+#' @export
+#'
 get_precision <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
@@ -190,7 +200,7 @@ get_precision <- function(predictions, labels, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  precision <- posPredValue(predictions_threshold, labels, positive = "1")
+  precision <- caret::posPredValue(predictions_threshold, labels, positive = "1")
   return(precision)
 
 }
@@ -205,6 +215,7 @@ get_precision <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns recall value
+#' @export
 
 get_recall <- function(predictions, labels, threshold){
 
@@ -216,7 +227,7 @@ get_recall <- function(predictions, labels, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  recall <- sensitivity(predictions_threshold, labels,  positive = "1")
+  recall <- caret::sensitivity(predictions_threshold, labels,  positive = "1")
   return(recall)
 
 }
@@ -232,6 +243,7 @@ get_recall <- function(predictions, labels, threshold){
 #' @param labels list of numerics, actual values/outcomes
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns accuracy value
+#' @export
 
 get_accuracy <- function(predictions, labels, threshold){
 
@@ -239,7 +251,7 @@ get_accuracy <- function(predictions, labels, threshold){
   labels <- as.factor(as.vector(labels))
   predictions_threshold <- as.factor(ifelse(predictions >= threshold, 1, 0))
 
-  CM <- confusionMatrix(predictions_threshold, labels, mode = "prec_recall")
+  CM <- caret::confusionMatrix(predictions_threshold, labels, mode = "prec_recall")
   accuracy <- as.vector(CM$overall["Accuracy"])
   return(accuracy)
 }
@@ -254,8 +266,9 @@ get_accuracy <- function(predictions, labels, threshold){
 #' @param predictions list of numerics,  predicted values
 #' @param labels list of numerics, actual values/outcomes
 #' @return numeric, value from 0-1 that is the threshold that maximizes the metric func
+#' @export
 
-theshold_finder <- function(func, predictions,labels){
+threshold_finder <- function(func, predictions,labels){
 
   i <- 0
   res <- data.frame()
