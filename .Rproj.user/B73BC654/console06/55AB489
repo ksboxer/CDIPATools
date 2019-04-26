@@ -1,504 +1,0 @@
-[0m[0K]0;:/d/Users/htet/Desktop/Projects/CDIPATools[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git i[0K[?25hn[0Ki[0Kt[0K[?25l
-[0K[?25hInitialized empty Git repository in D:/Users/htet/Desktop/Projects/CDIPATools/.git/[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ l[0K[?25hs[0K[?25l
-[0K[?25hCDIPATools.Rproj  DESCRIPTION  LICENSE  NAMESPACE  R  man  tests  vignettes[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ l[0K[?25hs[0K[6G[?25l$ ls -[0K[?25ha[0K[?25l
-[0K[?25h.  ..  .Rbuildignore  .Rproj.user  .git  CDIPATools.Rproj  DESCRIPTION  LICENSE  NAMESPACE  R  man  tests  vignettes[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git r[0K[?25he[0Km[0Ko[0Kt[0Ke[0K[14G[?25l$ git remote a[0K[?25hd[0Kd[0K[?25l$ git remote ad[0K[?25h[?25l$ git remote a[0K[?25h[?25l$ git remote[0K[14G[?25h[13G[?25l$ git remot[0K[13G[?25h[12G[?25l$ git remo[0K[12G[?25h[11G[?25l$ git rem[0K[?25h[?25l$ git re[0K[?25h[?25l$ git r[0K[?25h[?25l$ git[0K[7G[?25h[6G[?25l$ gi[0K[?25h[?25l$ g[0K[?25h[?25l$[0K[3G[?25h[?25l$ g[0K[3G[?25h[?25l$ git remote add origin git@github.com:MDRCNY/CDIPATools.git[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$ git push[0K[9G[?25h[?25l$ git push -u origin master[0K[?25h[?25l$ git push -u origin maste[0K[?25h[?25l$ git push -u origin mast[0K[?25h[?25l$ git push -u origin mas[0K[26G[?25h[25G[?25l$ git push -u origin ma[0K[?25h[?25l$ git push -u origin m[0K[?25h[?25l$ git push -u origin[0K[22G[?25h[21G[?25l$ git push -u origi[0K[?25h[?25l$ git push -u orig[0K[?25h[?25l$ git push -u ori[0K[?25h[?25l$ git push -u or[0K[?25h[?25l$ git push -u o[0K[?25h[?25l$ git push -u[0K[15G[?25h[14G[?25l$ git push -[0K[?25h[?25l$ git push[0K[12G[?25h[11G[?25l$ git pus[0K[?25h[?25l$ git pu[0K[?25h[?25l$ git p[0K[?25h[?25l$ git[0K[7G[?25h[6G[?25l$ gi[0K[?25ht[0K[7G[?25l$ git r[0K[?25he[0K,[0Kp[0Kt[0Ke[0K[14G[13G[?25l$ git re,pt[0K[?25h[?25l$ git re,p[0K[?25h[?25l$ git re,[0K[?25h[?25l$ git re[0K[10G[?25h[9G[?25l$ git rem[0K[?25ho[0Kt[0Ke[0K[14G[?25l$ git remote -[0K[?25hv[0K[?25l
-[0K[?25horigin  git@github.com:MDRCNY/CDIPATools.git (fetch)[0K[?25l
-origin  git@github.com:MDRCNY/CDIPATools.git (push)[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push r[0K[?25h[?25l$ git push[0K[12G[?25h[11G[?25l$ git pus[0K[?25h[?25l$ git pu[0K[?25h[?25l$ git p[0K[?25h[?25l$ git[0K[8G[?25h[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-[0K
-Initial commit[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31m.Rbuildignore[0m[0K
-        [0;31m.Rproj.user/[0m[0K
-        [0;31mCDIPATools.Rproj[0m[0K
-        [0;31mDESCRIPTION[0m[0K
-        [0;31mLICENSE[0m[0K
-        [0;31mNAMESPACE[0m[0K
-        [0;31mR/[0m[0K
-        [0;31mman/[0m[0K
-        [0;31mtests/[0m[0K
-        [0;31mvignettes/[0m[0K
-[0K
-nothing added to commit but untracked files present (use "git add" to track)[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25h[?25ld[0K[8G[?25h[9G[?25l$ git add[0K[?25h[11G[?25l$ git add .[0K[?25h[?25l
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/1A29E149.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/5E1E90EF.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/6C17722F.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/916EA559.[0K
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/9A042C07.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/C2233CDC.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/DD647A41.[0K
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/F542397F.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/FD3F2F8E.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/prop/INDEX.[0K
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976.[0K
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B.[0K
-The file will have its original line endings in your working directory.[0K
-warning: LF will be replaced by CRLF in .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents.[0K
-The file will have its original line endings in your working directory.[0K
-[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/shared/notebooks/paths.[0K[?25l
-The file will have its original line endings in your working directory.[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ l[0K[?25hs[0K[?25l
-[0K[?25hCDIPATools.Rproj  DESCRIPTION  LICENSE  NAMESPACE  R  man  tests  vignettes[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-[0K
-Initial commit[0K
-[0K
-Changes to be committed:[0K
-  (use "git rm --cached <file>..." to unstage)[0K
-[0K
-        [0;32mnew file:   .Rbuildignore[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/INDEX001[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/1A29E149[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/5E1E90EF[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/6C17722F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/916EA559[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/9A042C07[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/C2233CDC[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/DD647A41[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/F542397F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/FD3F2F8E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents[0m[0K[?25h[?25l
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/lock_file[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/B73BC654EA7529CA/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/EFB89953-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/paths[0m[0K
-        [0;32mnew file:   CDIPATools.Rproj[0m[0K
-        [0;32mnew file:   DESCRIPTION[0m[0K
-        [0;32mnew file:   LICENSE[0m[0K
-        [0;32mnew file:   NAMESPACE[0m[0K
-        [0;32mnew file:   R/LinearInterpolate.R[0m[0K
-        [0;32mnew file:   man/LinInterpolate.Rd[0m[0K
-        [0;32mnew file:   tests/testthat.R[0m[0K
-        [0;32mnew file:   tests/testthat/test-lininterpolate.R[0m[0K
-        [0;32mnew file:   vignettes/interpolation-example.rmd[0m[0K
-[0K
-Changes not staged for commit:[0K
-  (use "git add <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-[0K
-Initial commit[0K
-[0K
-Changes to be committed:[0K
-  (use "git rm --cached <file>..." to unstage)[0K
-[0K
-        [0;32mnew file:   .Rbuildignore[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/INDEX001[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/1A29E149[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/5E1E90EF[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/6C17722F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/916EA559[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/9A042C07[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/C2233CDC[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/DD647A41[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/F542397F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/FD3F2F8E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/lock_file[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/B73BC654EA7529CA/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/EFB89953-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/paths[0m[0K
-        [0;32mnew file:   CDIPATools.Rproj[0m[0K
-        [0;32mnew file:   DESCRIPTION[0m[0K
-        [0;32mnew file:   LICENSE[0m[0K
-        [0;32mnew file:   NAMESPACE[0m[0K
-        [0;32mnew file:   R/LinearInterpolate.R[0m[0K
-        [0;32mnew file:   man/LinInterpolate.Rd[0m[0K
-        [0;32mnew file:   tests/testthat.R[0m[0K
-        [0;32mnew file:   tests/testthat/test-lininterpolate.R[0m[0K
-        [0;32mnew file:   vignettes/interpolation-example.rmd[0m[0K
-[0K
-Changes not staged for commit:[0K
-  (use "git add <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/paths[0m[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31m.gitignore[0m[0K
-[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25hg[0Ki[0Kt[0Ki[0Kg[0Kn[0Ko[0Kr[0Ke[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-[0K
-Initial commit[0K
-[0K
-Changes to be committed:[0K
-  (use "git rm --cached <file>..." to unstage)[0K
-[0K
-        [0;32mnew file:   .Rbuildignore[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/console06/INDEX001[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/1A29E149[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/5E1E90EF[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/6C17722F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/916EA559[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/9A042C07[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/C2233CDC[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/DD647A41[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/F542397F[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/FD3F2F8E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents[0m[0K
-        [0;32mnew file:   .Rproj.user/B73BC654/sources/s-EA7529CA/lock_file[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/B73BC654EA7529CA/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/EFB89953-interpolation-example/1/s/chunks.json[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[0m[0K
-        [0;32mnew file:   .Rproj.user/shared/notebooks/paths[0m[0K
-        [0;32mnew file:   .gitignore[0m[0K
-        [0;32mnew file:   CDIPATools.Rproj[0m[0K
-        [0;32mnew file:   DESCRIPTION[0m[0K
-        [0;32mnew file:   LICENSE[0m[0K
-        [0;32mnew file:   NAMESPACE[0m[0K
-        [0;32mnew file:   R/LinearInterpolate.R[0m[0K
-        [0;32mnew file:   man/LinInterpolate.Rd[0m[0K
-        [0;32mnew file:   tests/testthat.R[0m[0K
-        [0;32mnew file:   tests/testthat/test-lininterpolate.R[0m[0K
-        [0;32mnew file:   vignettes/interpolation-example.rmd[0m[0K
-[0K
-Changes not staged for commit:[0K
-  (use "git add <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/paths[0m[0K
-[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0K,[0Ki[0Kt[0K[15G[14G[?25l$ git comm,i[0K[14G[?25h[13G[?25l$ git comm,[0K[?25h[?25l$ git comm[0K[?25h[?25l$ git com[0K[?25hm[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hS[0Ka[0Km[0Kp[0Kl[0Ke[0K[25G[?25l$ git commit -m "Sample p[0K[?25ha[0Kc[0Kk[0Ka[0Kg[0Ke[0K[33G[?25l$ git commit -m "Sample package t[0K[?25he[0Km[0Kp[0Kl[0Ka[0Kt[0Ke[0K"[0K[?25l
-[0K[?25h[master (root-commit) 4[0Kd50427] Sample package template[0K[?25l
- Committer: Zarni Htet <Zarni.Htet@mdrc.org>[0K
-Your name and email address were configured automatically based[0K
-on your username and hostname. Please check that they are accurate.[0K
-You can suppress this message by setting them explicitly. Run the[0K
-following command and follow the instructions in your editor to edit[0K
-your configuration file:[0K
-[0K
-    git config --global --edit[0K
-[0K
-After doing this, you may fix the identity used for this commit with:[0K
-[0K
-    git commit --amend --reset-author[0K
-[0K
-[0K[?25h 44 files changed, 561 insertions(+)[0K[?25l
- create mode 100644 .Rbuildignore[0K
- create mode 100644 .Rproj.user/B73BC654/console06/55AB489[0K
- create mode 100644 .Rproj.user/B73BC654/console06/INDEX001[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/1A29E149[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/5E1E90EF[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/6C17722F[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/916EA559[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/9A042C07[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/C2233CDC[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/DD647A41[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/F542397F[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/FD3F2F8E[0K
- create mode 100644 .Rproj.user/B73BC654/sources/prop/INDEX[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents[0K
- create mode 100644 .Rproj.user/B73BC654/sources/s-EA7529CA/lock_file[0K
- create mode 100644 .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/B73BC654EA7529CA/chunks.json[0K
- create mode 100644 .Rproj.user/shared/notebooks/C7B15E51-interpolation-example/1/s/chunks.json[0K
- create mode 100644 .Rproj.user/shared/notebooks/EFB89953-interpolation-example/1/s/chunks.json[0K
- create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names[0K
- create mode 100644 .Rproj.user/shared/notebooks/paths[0K
- create mode 100644 .gitignore[0K
- create mode 100644 CDIPATools.Rproj[0K
- create mode 100644 DESCRIPTION[0K
- create mode 100644 LICENSE[0K
- create mode 100644 NAMESPACE[0K
- create mode 100644 R/LinearInterpolate.R[0K
- create mode 100644 man/LinInterpolate.Rd[0K
- create mode 100644 tests/testthat.R[0K
- create mode 100644 tests/testthat/test-lininterpolate.R[0K
- create mode 100644 vignettes/interpolation-example.rmd[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git push origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
-[0K[?25hEnter passphrase for key '/d/Users/htet/.ssh/id_rsa':[0K[55G[?25l
-[0K[?25hCounting objects: 56, done.[0K[?25l
-[0K[?25hDelta compression using up to 2 threads.[0K[?25l
-Compressing objects: 100% (44/44), done.[0K
-Writing objects:  98% (55/56)[0K[1G[?25hWriting objects: 100% (56/56), 8.44 KiB | 0 bytes/s, done.[0K[?25l
-Total 56 (delta 6), reused 0 (delta 0)[0K
-[0K[?25hremote: Resolving deltas:   0% (0/6)[0K[40G[?25lremote: Resolving deltas: 100% (6/6), done.[0K
-[0K[?25hTo github.com:MDRCNY/CDIPATools.git[0K[?25l
- * [new branch]      master -> master[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0K[?25lt[0K[5G[?25h[6G[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[12G[?25l$ git pull o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git pull origin m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
-[0K[?25hEnter passphrase for key '/d/Users/htet/.ssh/id_rsa':[0K[55G[?25l
-[0K[?25hremote: Enumerating objects: 4, done.[0K[?25l
-remote: Counting objects: 100% (4/4), done.[0K
-remote: Compressing objects: 100% (3/3), done.[0K
-remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0[0K
-[0K[?25hUnpacking objects: 100% (3/3), done.[0K[?25l
-[0K[?25hFrom github.com:MDRCNY/CDIPATools[0K[?25l
- * branch            master     -> FETCH_HEAD[0K
-   4d50427..50ea6e6  master     -> origin/master[0K
-[0K[?25hUpdating 4d50427..50ea6e6[0K[?25l
-[0K[?25hFast-forward[0K[?25l
-[0K[?25h README.md | 4 [0;32m++++[0m[0K[?25l
- 1 file changed, 4 insertions(+)[0K
- create mode 100644 README.md[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25hh[0Ke[0Kck[0Ko[0Ku[0Kt[0K[16G[?25l$ git checkout -[0K[?25hn[0K[?25l$ git checkout -[0K[?25hb[0K[19G[?25l$ git checkout -b "[0K[?25hz[0Ka[0Kr[0Kn[0Ki[0Kt[0Ke[0Ks[0Kt[0K"[0K[?25l
-[0K[?25hM       .Rproj.user/B73BC654/console06/55AB489[0K[?25l
-M       .Rproj.user/B73BC654/sources/prop/INDEX[0K
-M       .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0K
-M       .Rproj.user/shared/notebooks/paths[0K
-[0K[?25hSwitched to a new branch 'zarnitest'[0K[?25l
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch zarnitest[0K[?25l
-Changes not staged for commit:[0K
-  (use "git add <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/paths[0m[0K
-[0K
-no changes added to commit (use "git add" and/or "git commit -a")[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[12G[?25l$ git push o[0K[?25hr[0Ki[0Kg[0Ki[0Kn[0K[19G[?25l$ git push origin z[0K[?25ha[0K[?25lr[0K[21G[?25h[22G[?25l$ git push origin zarn[0K[?25hi[0Kt[0Ke[0Ks[0Kt[0K[?25l
-[0K[?25hEnter passphrase for key '/d/Users/htet/.ssh/id_rsa':[0K[55G[?25l
-Enter passphrase for key '/d/Users/htet/.ssh/id_rsa':[0K[55G[?25h[?25l
-[0K[?25hTotal 0 (delta 0), reused 0 (delta 0)[0K[?25l
-[0K[?25hremote:[0K[?25l
-remote: Create a pull request for 'zarnitest' on GitHub by visiting:[0K
-remote:      https://github.com/MDRCNY/CDIPATools/pull/new/zarnitest[0K
-remote:[0K
-[0K[?25hTo github.com:MDRCNY/CDIPATools.git[0K[?25l
- * [new branch]      zarnitest -> zarnitest[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[3G[?25h[0m[0K[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[2A[?25h]0;:/d/Users/htet/Desktop/Projects/CDIPATools[?25l
-
-[?25l[1A[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0K
-[0m$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[12G[?25l$ git pull o[0K[?25hr[0K[?25lio[0K[15G[?25h[16G[?25l$ git pull oriog[0K[?25hi[0Kn[0K[?25l$ git pull oriogi[0K[?25h[?25l$ git pull oriog[0K[?25h[?25l$ git pull orio[0K[?25h[?25l$ git pull ori[0K[?25hg[0Ki[0Kn[0K[19G[?25l$ git pull origin k[0K[?25hs[0Kb[0K_[0Ka[0Kd[0Kd[0Ki[0Kn[0Kg[0K_[0Km[0Ke[0Kt[0Kr[0Ki[0Kc[0Ks[0K_[0Kf[0Ki[0Kl[0Ke[0K[?25l
-[0K[?25hEnter passphrase for key '/d/Users/htet/.ssh/id_rsa':[0K[55G[?25l
-[0K[?25hremote: Enumerating objects: 30, done.[0K[?25l
-remote: Counting objects: 100% (30/30), done.[0K
-remote: Compressing objects: 100% (19/19), done.[0K
-[0K[?25h[?25lUnpacking objects:   8% (2/25)[0K[1G[?25h[?25lUnpacking objects:  28% (7/25)[0K[1G[?25h[?25lUnpacking objects:  40% (10/25)[0K[1G[?25hremote: Total 25 (delta 11), reused 17 (delta 5), pack-reused 0[0K[?25l
-Unpacking objects:  68% (17/25)[0K[1G[?25h[?25lUnpacking objects:  80% (20/25)[0K[1G[?25h[?25lUnpacking objects:  92% (23/25)[0K[1G[?25hUnpacking objects: 100% (25/25), done.[0K[?25l
-[0K[?25hFrom github.com:MDRCNY/CDIPATools[0K[?25l
- * branch            ksb_adding_metrics_file -> FETCH_HEAD[0K
-[0K[?25h * [new branch]      ksb_adding_metrics_file -> origin/ksb_adding_metrics_file[0K[?25l
-[0K[?25h[?25lUpdating 50ea6e6..7455e0b[0K[1G[?25h[?25l
-[0K[?25hFast-forward[0K[?25l
-[0K[?25h DESCRIPTION                        |     5 [0;32m+[0;31m-[0m[0K[?25l
- R/utils/metrics.R                  |   275 [0;32m+[0m[0K
- README.md                          |    14 [0;32m+[0m[0K
- data/FakePredictionResults.csv     | 10001 [0;32m+++++++++++++++++++++++++++++++++++[0m[0K
- vignettes/metril-utils-example.rmd |   118 [0;32m+[0m[0K
- 5 files changed, 10412 insertions(+), 1 deletion(-)[0K
- create mode 100644 R/utils/metrics.R[0K
- create mode 100644 data/FakePredictionResults.csv[0K
- create mode 100644 vignettes/metril-utils-example.rmd[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[3G[?25h[4G[?25l$ gi[0K[?25ht[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch zarnitest[0K[?25l
-Changes not staged for[0K[1G[?25hChanges not staged for commit:[0K[?25l
-  (use "git add/rm <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/55AB489[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/console06/INDEX001[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/1A29E149[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/916EA559[0m[0K
-        [0;31mmodified:   .Rproj.user/B73BC654/sources/prop/INDEX[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/2BEB3A78-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/2E2F6BF1-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/311F7B0D-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/522B2B85-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/75ED50E5-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/8C300976-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/E7AE3F9E-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/ED7EF13B-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/B73BC654/sources/s-EA7529CA/lock_file[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/paths[0m[0K
-        [0;31mmodified:   .gitignore[0m[0K
-        [0;31mmodified:   DESCRIPTION[0m[0K
-        [0;31mmodified:   NAMESPACE[0m[0K
-        [0;31mdeleted:    R/utils/metrics.R[0m[0K
-        [0;31mmodified:   vignettes/metril-utils-example.rmd[0m[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31mR/metrics.R[0m[0K
-        [0;31mman/get_accuracy.Rd[0m[0K
-        [0;31mman/get_auc_pr.Rd[0m[0K
-        [0;31mman/get_auc_roc.Rd[0m[0K
-        [0;31mman/get_confusion_matrix.Rd[0m[0K
-        [0;31mman/get_fnr.Rd[0m[0K
-        [0;31mman/get_fpr.Rd[0m[0K
-        [0;31mman/get_precision.Rd[0m[0K
-        [0;31mman/get_recall.Rd[0m[0K
-        [0;31mman/get_tnr.Rd[0m[0K
-        [0;31mman/get_tpr.Rd[0m[0K
-        [0;31mman/threshold_finder.Rd[0m[0K
-[0K
-no changes added to commit (use "git add" and/or "git commit -a")[0K
-[0K[?25h[?25l
-[0;32mhtet@EC2AMAZ-VL0SD87 [0;35m [0;33m~/Desktop/Projects/CDIPATools[0;36m (zarnitest)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[12G[11G[?25l$ git pul[0K[?25h[?25l$ git pu[0K[?25h[?25l$ git p[0K[?25h[?25l$ git[0K[7G[?25h[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
-[0K[?25h

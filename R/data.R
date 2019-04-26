@@ -12,5 +12,4 @@
 #'   \item{true.risk.score}{0-1, true probability risk score}
 #'   \item{true.risk.bin}{0 or 1, true binary label}
 #' }
-
-"fake_predictions_data"
+"FakePredictionResults"

@@ -25,7 +25,8 @@ This dataset is contained in the data file of this package.  This dataset has be
 ## ZARNI : How do I do paths within the package?
 ## Ans: I didn't find any examples or write up that talks about it. Since the package structure would be consistent unless sb really changes it, I have made it as a relative path. 
 
-fake_predictions_data <- read.csv("../data/FakePredictionResults.csv",stringsAsFactors = FALSE)
+dat <- load(file = "../data/FakePredictionResults.rda")
+fake_predictions_data <- FakePredictionResults
 head(fake_predictions_data)
 ```
 We will use the "true.risk.bin" column as true labels, and the column "est.risk.score" as the predicted probability by a model
