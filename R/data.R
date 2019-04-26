@@ -1,13 +1,16 @@
-#' Prices of 50,000 round cut diamonds.
+#' Simulated Prediction and True Label dataset
 #'
-#' A dataset containing the prices and other attributes of almost 54,000
-#' diamonds.
+#' A dataset containing 10,000 rows of randomly generated classification predictions,
+#' with corresponding probability scores, and binary true labels, with corresponding
+#' true risk scores
 #'
-#' @format A data frame with 53940 rows and 10 variables:
+#' @format A data frame with 10,000 rows and 5 variables:
 #' \describe{
-#'   \item{price}{price, in US dollars}
-#'   \item{carat}{weight of the diamond, in carats}
-#'   ...
+#'   \item{id}{sequential id, numeric}
+#'   \item{est.risk.score}{0-1, predicted probability}
+#'   \item{est.risk.bin}{0 or 1, predicted binary classification label}
+#'   \item{true.risk.score}{0-1, true probability risk score}
+#'   \item{true.risk.bin}{0 or 1, true binary label}
 #' }
-#' @source \url{http://www.diamondse.info/}
-"diamonds"
+
+"fake_predictions_data"
