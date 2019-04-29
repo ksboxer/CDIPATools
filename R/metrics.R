@@ -1,7 +1,7 @@
 
 # This script contains all the code for ML performance metrics
 
-#' Calculates Confusion Matrix (TP, FP, FN, TN)
+#' Calculates Confusion Matrix (TP, FP, FN, TN) - KP: Spell these out?
 #'
 #' This function takes the predictions of a model,  (can be either binary 0 or 1, or continous numeric [0,1]) and
 #' calculates the confusion metrics based on the predictions.  Given that predictions need to be binary for the confusion matrix to work
