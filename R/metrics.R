@@ -1,7 +1,7 @@
 
 # This script contains all the code for ML performance metrics
-KP: Lets rename this script to be more specific about what it contains (metrics could be anything). Maybe predictive performance metrics?
-
+#KP: Lets rename this script to be more specific about what it contains (metrics could be anything). Maybe predictive performance metrics?
+#KP: Also, so far all the metrics are for the case when we are predicting binary outcomes only. We should note that for now. We'll want to expand later.'
 #' Confusion Matrix
 #'
 #' This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
