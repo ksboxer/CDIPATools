@@ -28,6 +28,7 @@ This dataset is contained in the data file of this package.  This dataset has be
 dat <- load(file = "../data/FakePredictionResults.rda")
 fake_predictions_data <- FakePredictionResults
 head(fake_predictions_data)
+#mvd: can you also give me a sample N to benchmark later numbers against
 ```
 We will use the "true.risk.bin" column as true labels, and the column "est.risk.score" as the predicted probability by a model
 
@@ -87,6 +88,7 @@ get_auc_pr(predictions = fake_predictions_data$est.risk.score, labels = fake_pre
 We will show how the get precision function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
+#mvd: the number here is described as the negative predicted value in the confusion matrix above
 get_precision(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## get_recall
@@ -94,6 +96,7 @@ get_precision(predictions = fake_predictions_data$est.risk.score, labels = fake_
 We will show how the get recall function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
+#the number here is shown as specificity in the confusion matrix above
 get_recall(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## get_accuracy

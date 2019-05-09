@@ -14,7 +14,7 @@ threshold_finder(func, predictions, labels)
 \item{labels}{list of numerics, actual values/outcomes}
 }
 \value{
-numeric, value from 0-1 that is the threshold that maximizes the metric func
+numeric, value from 0 to 1 that is the threshold that maximizes the metric func
 }
 \description{
 This function takes a given performance metric (precision, accuracy, or recall) that requires a threshold

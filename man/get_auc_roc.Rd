@@ -2,7 +2,10 @@
 % Please edit documentation in R/metrics.R
 \name{get_auc_roc}
 \alias{get_auc_roc}
-\title{Calculates AUC ROC for continious predictions, and actual predictions}
+\title{Calculates area under the curve (AUC) for the receiver-operator cureve (ROC) for continious predictions, and actual predictions
+KP: The summary above and below don't match.
+This function takes the predictions of a model, (can be either binary 0 or 1, or continous numeric [0,1]) and
+calculates the ROC curve, and then computes the AUC given the predicted values and actual values}
 \usage{
 get_auc_roc(predictions, labels)
 }
@@ -15,7 +18,8 @@ get_auc_roc(predictions, labels)
 numeric, returns AUC ROC value
 }
 \description{
+Calculates area under the curve (AUC) for the receiver-operator cureve (ROC) for continious predictions, and actual predictions
+KP: The summary above and below don't match.
 This function takes the predictions of a model, (can be either binary 0 or 1, or continous numeric [0,1]) and
-calculates the roc curve, and then gets the auc under the curve given the predicted values and actual values
-Notes : baseline is .5, and perfect is 1
+calculates the ROC curve, and then computes the AUC given the predicted values and actual values
 }

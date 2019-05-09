@@ -2,7 +2,8 @@
 % Please edit documentation in R/metrics.R
 \name{get_fpr}
 \alias{get_fpr}
-\title{Calculates the False Positive Rate (FPR)}
+\title{KP: What is the point of these functions when these values have already been computed in the above get_confusion_matrix function?
+Calculates the False Positive Rate (FPR)}
 \usage{
 get_fpr(predictions, labels, threshold)
 }

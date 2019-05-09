@@ -2,22 +2,22 @@
 % Please edit documentation in R/metrics.R
 \name{get_confusion_matrix}
 \alias{get_confusion_matrix}
-\title{Calculates Confusion Matrix (TP, FP, FN, TN)}
+\title{This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
+The predictions can either be binary or continuous. For continuous predictions, a threshold for translating the results to binary classifications must be supplied. If the predictions are already binary, then pass in .5. (KP: Why not just null?)}
 \usage{
 get_confusion_matrix(predictions, labels, threshold)
 }
 \arguments{
-\item{predictions}{list of numerics,  predicted values}
+\item{predictions}{list (KP: isn't it a numeric vector?) of numerics,  predicted values}
 
-\item{labels}{list of numerics, actual values/outcomes}
+\item{labels}{(KP: let's limit jargon and say call this "outcomes" or "trueOutcomes" list of numerics (KP: again use correct R object), actual values/outcomes (KP: if binary, need to be 0/1 yes?)}
 
-\item{threshold}{numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s}
+\item{threshold}{numeric, value between 0 and 1 to translate continuous predictions to binary classifications}
 }
 \value{
-table, table of integers with FP, FN, TP,R
+table (KP: is this an object name or object classification?), table of integers with FP, FN, TP, TN.
 }
 \description{
-This function takes the predictions of a model,  (can be either binary 0 or 1, or continous numeric [0,1]) and
-calculates the confusion metrics based on the predictions.  Given that predictions need to be binary for the confusion matrix to work
-you need to pass in a threshold to cut the predictions off.  If the predictions are already binary, then pass in .5
+This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
+The predictions can either be binary or continuous. For continuous predictions, a threshold for translating the results to binary classifications must be supplied. If the predictions are already binary, then pass in .5. (KP: Why not just null?)
 }
