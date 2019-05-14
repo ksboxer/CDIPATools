@@ -22,3 +22,7 @@ calculates the accuracy based on the predictions.  Given that predictions need t
 you need to pass in a threshold to but the predictions off.  If the predictions are already binary, then pass in .5
 Note: if there are imbalanced positives and negatives this metric might not be that useful
 }
+\examples{
+accuracy(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
+}

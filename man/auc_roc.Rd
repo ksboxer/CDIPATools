@@ -23,3 +23,7 @@ KP: The summary above and below don't match.
 This function takes the predictions of a model, (can be either binary 0 or 1, or continous numeric [0,1]) and
 calculates the ROC curve, and then computes the AUC given the predicted values and actual values
 }
+\examples{
+auc_roc(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin)
+}

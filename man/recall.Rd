@@ -21,3 +21,7 @@ This function takes the predictions of a model, (can be either binary 0 or 1, or
 calculates the recall based on the predictions.  Given that predictions need to binary for the recall calculates
 you need to pass in a threshold to but the predictions off.  If the predictions are already binary, then pass in .5
 }
+\examples{
+recall(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
+}

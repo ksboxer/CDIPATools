@@ -19,3 +19,7 @@ This function takes the predictions of a model, (can be either binary 0 or 1, or
 calculates the precision recall curve, and then gets the auc under the curve given the predicted values and actual values
 Notes : baseline is ~.35, and perfect is 1
 }
+\examples{
+auc_pr(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin)
+}

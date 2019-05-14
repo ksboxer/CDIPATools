@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 ```
 ## Read in Sample Dataset
 
-This dataset is contained in the data file of this package.  This dataset has been made to simulate what predictions would look like from a model, meaning it contains a column that has probability scores, and also a column that has a prediction (0/1) for binary classification, and also has a column that contains a true label that is binary
+This dataset is contained in the data file of this package.  This dataset has been made to simulate what predictions would look like from a model, meaning it contains a column that has probability scores, and also a column that has a prediction (0/1) for binary classification, and also has a column that contains a true outcome that is binary
 
 ```{r}
 #dat <- load(file = "../data/FakePredictionResults.rda")

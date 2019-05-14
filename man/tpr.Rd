@@ -22,3 +22,7 @@ calculates the True Positive Rate.  Given that predictions need to be binary for
 you need to pass in a threshold to cut the predictions off.  If the predictions are already binary, then pass in .5
 TPR = TP / (FN + TP)
 }
+\examples{
+tpr(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
+}

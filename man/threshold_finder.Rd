@@ -20,3 +20,11 @@ numeric, value from 0 to 1 that is the threshold that maximizes the metric func
 This function takes a given performance metric (precision, accuracy, or recall) that requires a threshold
 and returns the threshold value that maximizes the specified metric
 }
+\examples{
+threshold_finder(precision, predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin)
+threshold_finder(recall, predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin)
+threshold_finder(accuracy, predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin)
+}

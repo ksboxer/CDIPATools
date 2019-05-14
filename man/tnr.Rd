@@ -22,3 +22,7 @@ calculates the True Negative Rate.  Given that predictions need to be binary for
 you need to pass in a threshold to cut the predictions off.  If the predictions are already binary, then pass in .5
 TNR = TN / (TN + FP)
 }
+\examples{
+tnr(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
+}
