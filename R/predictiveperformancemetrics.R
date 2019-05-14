@@ -1,5 +1,5 @@
 
-# This script contains all the code for ML performance metrics for binary outcomes only.
+#' This script contains all the code for ML performance metrics for binary outcomes only.
 #'
 #' This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
 #' The predictions can either be binary or continuous. For continuous predictions, a threshold for translating the results to binary classifications must be supplied. If the predictions are already binary, then pass in .5. (KP: Why not just null?)
@@ -9,6 +9,9 @@
 #' @param threshold numeric, value between 0 and 1 to translate continuous predictions to binary classifications
 #' @return list returns a list object that includes a confusion matrix table, accuracy, kappa statistics etc
 #' @export
+#' @examples
+#' confusion_matrix(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = 0.5)
 
 confusion_matrix <- function(predictions, outcomes, threshold){
 

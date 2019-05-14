@@ -21,3 +21,7 @@ list returns a list object that includes a confusion matrix table, accuracy, kap
 This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
 The predictions can either be binary or continuous. For continuous predictions, a threshold for translating the results to binary classifications must be supplied. If the predictions are already binary, then pass in .5. (KP: Why not just null?)
 }
+\examples{
+confusion_matrix(predictions = FakePredictionResults$est.risk.score,
+outcomes = FakePredictionResults$true.risk.bin, threshold = 0.5)
+}
