@@ -2,8 +2,7 @@
 % Please edit documentation in R/predictiveperformancemetrics.R
 \name{confusion_matrix}
 \alias{confusion_matrix}
-\title{This function produces a confusion matrix - a table that displays the false positive (FP), false negative (FN), true positive(TP), and true negative (results) by comparing a set of predictions to true values.
-The predictions can either be binary or continuous. For continuous predictions, a threshold for translating the results to binary classifications must be supplied. If the predictions are already binary, then pass in .5. (KP: Why not just null?)}
+\title{This script contains all the code for ML performance metrics for binary outcomes only.}
 \usage{
 confusion_matrix(predictions, outcomes, threshold)
 }

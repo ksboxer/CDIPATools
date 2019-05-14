@@ -39,6 +39,9 @@ confusion_matrix <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, false positive rate
 #' @export
+#' @examples
+#' fpr(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 fpr <- function(predictions, outcomes, threshold){
 
@@ -65,6 +68,9 @@ fpr <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, false negative rate
 #' @export
+#' @examples
+#' fnr(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 fnr <- function(predictions, outcomes, threshold){
 
@@ -91,6 +97,9 @@ fnr <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, true positive rate
 #' @export
+#' @examples
+#' tpr(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 tpr <- function(predictions, outcomes, threshold){
 
@@ -117,6 +126,9 @@ tpr <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, true negative rate
 #' @export
+#' @examples
+#' tnr(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 tnr <- function(predictions, outcomes, threshold){
 
@@ -143,6 +155,9 @@ tnr <- function(predictions, outcomes, threshold){
 #' @param outcomes list of numerics, actual values/outcomes
 #' @return numeric, returns AUC ROC value
 #' @export
+#' @examples
+#' auc_roc(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin)
 
 auc_roc <- function(predictions, outcomes){
 
@@ -168,6 +183,9 @@ auc_roc <- function(predictions, outcomes){
 #' @param outcomes list of numerics, actual values/outcomes
 #' @return numeric, returns AUC precision recall value
 #' @export
+#' @examples
+#'auc_pr(predictions = FakePredictionResults$est.risk.score,
+#'outcomes = FakePredictionResults$true.risk.bin)
 
 auc_pr <- function(predictions, outcomes){
   predictions <- as.vector(predictions)
@@ -188,7 +206,10 @@ auc_pr <- function(predictions, outcomes){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns precision value
 #' @export
-#'
+#' @examples
+#' precision(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
+
 precision <- function(predictions, outcomes, threshold){
 
   predictions <- as.vector(predictions)
@@ -215,6 +236,9 @@ precision <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns recall value
 #' @export
+#' @examples
+#' recall(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 recall <- function(predictions, outcomes, threshold){
 
@@ -243,6 +267,9 @@ recall <- function(predictions, outcomes, threshold){
 #' @param threshold numeric, value between 0 - 1 to cut  predictions that are continous within binary 0s and 1s
 #' @return numeric, returns accuracy value
 #' @export
+#' @examples
+#' accuracy(predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin, threshold = .5)
 
 accuracy <- function(predictions, outcomes, threshold){
 
@@ -266,6 +293,13 @@ accuracy <- function(predictions, outcomes, threshold){
 #' @param outcomes list of numerics, actual values/outcomes
 #' @return numeric, value from 0 to 1 that is the threshold that maximizes the metric func
 #' @export
+#' @examples
+#' threshold_finder(precision, predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin)
+#' threshold_finder(recall, predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin)
+#' threshold_finder(accuracy, predictions = FakePredictionResults$est.risk.score,
+#' outcomes = FakePredictionResults$true.risk.bin)
 
 threshold_finder <- function(func, predictions,outcomes){
 
