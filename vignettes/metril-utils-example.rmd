@@ -4,7 +4,7 @@ author: "Kate Boxer"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Metrics Utils Example}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -22,8 +22,6 @@ This dataset is contained in the data file of this package.  This dataset has be
 
 ```{r}
 
-## ZARNI : How do I do paths within the package?
-## Ans: I didn't find any examples or write up that talks about it. Since the package structure would be consistent unless sb really changes it, I have made it as a relative path. 
 
 dat <- load(file = "../data/FakePredictionResults.rda")
 fake_predictions_data <- FakePredictionResults
@@ -33,90 +31,90 @@ We will use the "true.risk.bin" column as true labels, and the column "est.risk.
 
 Now we will walk through and show each function in the "~/R/utils/metrics.R" file works
 
-## get_confusion_matrix
+## confusion_matrix
 
 We will start by showing how the get confusion metric function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_confusion_matrix(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+confusion_matrix(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_fpr
+## fpr
 
 We will show how the get false positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_fpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+fpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_fnr
+## fnr
 
 We will show how the get false negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_fnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+fnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_tpr
+## tpr
 
 We will show how the get true positive rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_tpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+tpr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_tnr
+## tnr
 
 We will show how the get true negative rate function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_tnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+tnr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_auc_roc
+## auc_roc
 
 We will show how the get auc roc function works.
 
 ```{r}
-get_auc_roc(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+auc_roc(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```
-## get_auc_pr
+## auc_pr
 
 We will show how the get auc precision recall curve function works.
 
 ```{r}
-get_auc_pr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+auc_pr(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```
-## get_precision
+## precision
 
 We will show how the get precision function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_precision(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+precision(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_recall
+## recall
 
 We will show how the get recall function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_recall(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+recall(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
-## get_accuracy
+## accuracy
 
 We will show how the get precision function works.  We will show that by using a cut-off threshold of .5 for the prediction probabilities
 
 ```{r}
-get_accuracy(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
+accuracy(predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin, threshold = .5)
 ```
 ## threshold_finder
 
 The threshold_finder function finds the optimal threshold cut-off for predictions based on a passed in metric function.  All the passed in metric functions need to take the parameters predictions,labels,and threshold.  We will show how to find the optimal threshold to maximize precision
 
 ```{r}
-threshold_finder(get_precision, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+threshold_finder(precision, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```
 We will show how to find the optimal threshold to maximize recall
 
 ```{r}
-threshold_finder(get_recall, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+threshold_finder(recall, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```
 We will show how to find the optimal threshold to maximize accuracy
 
 ```{r}
-threshold_finder(get_accuracy, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
+threshold_finder(accuracy, predictions = fake_predictions_data$est.risk.score, labels = fake_predictions_data$true.risk.bin)
 ```

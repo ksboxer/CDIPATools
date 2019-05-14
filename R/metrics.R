@@ -13,7 +13,7 @@
 #' @return table, table of integers with FP, FN, TP,R
 #' @export
 
-get_confusion_matrix <- function(predictions, labels, threshold){
+confusion_matrix <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
 
@@ -41,17 +41,17 @@ get_confusion_matrix <- function(predictions, labels, threshold){
 #' @return numeric, false positive rate
 #' @export
 
-get_fpr <- function(predictions, labels, threshold){
+fpr <- function(predictions, labels, threshold){
 
-  CM <- get_confusion_matrix(predictions, labels, threshold)
+  CM <- confusion_matrix(predictions, labels, threshold)
 
   table <- CM$table
 
   fp <- table[2,1]
   tn <- table[1,1]
 
-  fpr <- fp / (fp + tn)
-  return(fpr)
+  fpr_ <- fp / (fp + tn)
+  return(fpr_)
 }
 
 #' Calculates the False Negative Rate (FNR)
@@ -67,17 +67,17 @@ get_fpr <- function(predictions, labels, threshold){
 #' @return numeric, false negative rate
 #' @export
 
-get_fnr <- function(predictions, labels, threshold){
+fnr <- function(predictions, labels, threshold){
 
-  CM <- get_confusion_matrix(predictions, labels, threshold)
+  CM <- confusion_matrix(predictions, labels, threshold)
 
   table <- CM$table
 
   fn <- table[1,2]
   tp <- table[2,2]
 
-  fnr <- fn / (fn + tp)
-  return(fnr)
+  fnr_ <- fn / (fn + tp)
+  return(fnr_)
 }
 
 #' Calculates the True Positive Rate (TPR)
@@ -93,17 +93,17 @@ get_fnr <- function(predictions, labels, threshold){
 #' @return numeric, true positive rate
 #' @export
 
-get_tpr <- function(predictions, labels, threshold){
+tpr <- function(predictions, labels, threshold){
 
-  CM <- get_confusion_matrix(predictions, labels, threshold)
+  CM <- confusion_matrix(predictions, labels, threshold)
 
   table <- CM$table
 
   fn <- table[1,2]
   tp <- table[2,2]
 
-  tpr <- tp / (fn + tp)
-  return(tpr)
+  tpr_ <- tp / (fn + tp)
+  return(tpr_)
 }
 
 #' Calculates the True Negative Rate (TNR)
@@ -119,17 +119,17 @@ get_tpr <- function(predictions, labels, threshold){
 #' @return numeric, true negative rate
 #' @export
 
-get_tnr <- function(predictions, labels, threshold){
+tnr <- function(predictions, labels, threshold){
 
-  CM <- get_confusion_matrix(predictions, labels, threshold)
+  CM <- confusion_matrix(predictions, labels, threshold)
 
   table <- CM$table
 
   fp <- table[2,1]
   tn <- table[1,1]
 
-  tnr <- tn / (fp + tn)
-  return(tnr)
+  tnr_ <- tn / (fp + tn)
+  return(tnr_)
 
 }
 
@@ -145,15 +145,15 @@ get_tnr <- function(predictions, labels, threshold){
 #' @return numeric, returns AUC ROC value
 #' @export
 
-get_auc_roc <- function(predictions, labels){
+auc_roc <- function(predictions, labels){
 
   predictions <- as.vector(predictions)
   labels <- as.vector(labels)
 
 
   roc_obj <- pROC::roc(labels, predictions)
-  auc_roc <- as.numeric(pROC::auc(roc_obj))
-  return(auc_roc)
+  auc_roc_ <- as.numeric(pROC::auc(roc_obj))
+  return(auc_roc_)
 }
 
 
@@ -170,12 +170,12 @@ get_auc_roc <- function(predictions, labels){
 #' @return numeric, returns AUC precision recall value
 #' @export
 
-get_auc_pr <- function(predictions, labels){
+auc_pr <- function(predictions, labels){
   predictions <- as.vector(predictions)
   labels <- as.vector(labels)
 
-  auc_pr <-  PRROC::pr.curve(predictions[labels==1], predictions[labels==0])
-  return(auc_pr$auc.integral)
+  auc_pr_ <-  PRROC::pr.curve(predictions[labels==1], predictions[labels==0])
+  return(auc_pr_$auc.integral)
 }
 
 #' Calculate the Precision for predictions
@@ -190,7 +190,7 @@ get_auc_pr <- function(predictions, labels){
 #' @return numeric, returns precision value
 #' @export
 #'
-get_precision <- function(predictions, labels, threshold){
+precision <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
 
@@ -200,8 +200,8 @@ get_precision <- function(predictions, labels, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  precision <- caret::posPredValue(predictions_threshold, labels, positive = "1")
-  return(precision)
+  precision_ <- caret::posPredValue(predictions_threshold, labels, positive = "1")
+  return(precision_)
 
 }
 
@@ -217,7 +217,7 @@ get_precision <- function(predictions, labels, threshold){
 #' @return numeric, returns recall value
 #' @export
 
-get_recall <- function(predictions, labels, threshold){
+recall <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
 
@@ -227,8 +227,8 @@ get_recall <- function(predictions, labels, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  recall <- caret::sensitivity(predictions_threshold, labels,  positive = "1")
-  return(recall)
+  recall_ <- caret::sensitivity(predictions_threshold, labels,  positive = "1")
+  return(recall_)
 
 }
 
@@ -245,15 +245,15 @@ get_recall <- function(predictions, labels, threshold){
 #' @return numeric, returns accuracy value
 #' @export
 
-get_accuracy <- function(predictions, labels, threshold){
+accuracy <- function(predictions, labels, threshold){
 
   predictions <- as.vector(predictions)
   labels <- as.factor(as.vector(labels))
   predictions_threshold <- as.factor(ifelse(predictions >= threshold, 1, 0))
 
   CM <- caret::confusionMatrix(predictions_threshold, labels, mode = "prec_recall")
-  accuracy <- as.vector(CM$overall["Accuracy"])
-  return(accuracy)
+  accuracy_ <- as.vector(CM$overall["Accuracy"])
+  return(accuracy_)
 }
 
 
