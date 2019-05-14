@@ -1,3 +1,5 @@
+### Status
+[![Build Status](https://travis-ci.org/ksboxer/CDIPATools.png)](https://travis-ci.org/ksboxer/CDIPATools)
 # A draft
 
 
