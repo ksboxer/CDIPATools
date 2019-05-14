@@ -39,7 +39,7 @@ confusion_matrix <- function(predictions, outcomes, threshold){
 
 fpr <- function(predictions, outcomes, threshold){
 
-  CM <- get_confusion_matrix(predictions, outcomes, threshold)
+  CM <- confusion_matrix(predictions, outcomes, threshold)
 
   table <- CM$table
 
@@ -65,7 +65,7 @@ fpr <- function(predictions, outcomes, threshold){
 
 fnr <- function(predictions, outcomes, threshold){
 
-  CM <- get_confusion_matrix(predictions, outcomes, threshold)
+  CM <- confusion_matrix(predictions, outcomes, threshold)
 
   table <- CM$table
 
@@ -91,7 +91,7 @@ fnr <- function(predictions, outcomes, threshold){
 
 tpr <- function(predictions, outcomes, threshold){
 
-  CM <- get_confusion_matrix(predictions, outcomes, threshold)
+  CM <- confusion_matrix(predictions, outcomes, threshold)
 
   table <- CM$table
 
@@ -117,7 +117,7 @@ tpr <- function(predictions, outcomes, threshold){
 
 tnr <- function(predictions, outcomes, threshold){
 
-  CM <- get_confusion_matrix(predictions, outcomes, threshold)
+  CM <- confusion_matrix(predictions, outcomes, threshold)
 
   table <- CM$table
 
