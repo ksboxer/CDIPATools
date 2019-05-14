@@ -52,8 +52,8 @@ fpr <- function(predictions, outcomes, threshold){
   fp <- table[2,1]
   tn <- table[1,1]
 
-  fpr <- fp / (fp + tn)
-  return(fpr)
+  fpr_ <- fp / (fp + tn)
+  return(fpr_)
 }
 
 #' Calculates the False Negative Rate (FNR)
@@ -81,8 +81,8 @@ fnr <- function(predictions, outcomes, threshold){
   fn <- table[1,2]
   tp <- table[2,2]
 
-  fnr <- fn / (fn + tp)
-  return(fnr)
+  fnr_ <- fn / (fn + tp)
+  return(fnr_)
 }
 
 #' Calculates the True Positive Rate (TPR)
@@ -110,8 +110,8 @@ tpr <- function(predictions, outcomes, threshold){
   fn <- table[1,2]
   tp <- table[2,2]
 
-  tpr <- tp / (fn + tp)
-  return(tpr)
+  tpr_ <- tp / (fn + tp)
+  return(tpr_)
 }
 
 #' Calculates the True Negative Rate (TNR)
@@ -139,8 +139,8 @@ tnr <- function(predictions, outcomes, threshold){
   fp <- table[2,1]
   tn <- table[1,1]
 
-  tnr <- tn / (fp + tn)
-  return(tnr)
+  tnr_ <- tn / (fp + tn)
+  return(tnr_)
 
 }
 
@@ -166,8 +166,8 @@ auc_roc <- function(predictions, outcomes){
 
 
   roc_obj <- pROC::roc(outcomes, predictions)
-  auc_roc <- as.numeric(pROC::auc(roc_obj))
-  return(auc_roc)
+  auc_roc_ <- as.numeric(pROC::auc(roc_obj))
+  return(auc_roc_)
 }
 
 
@@ -191,8 +191,8 @@ auc_pr <- function(predictions, outcomes){
   predictions <- as.vector(predictions)
   outcomes <- as.vector(outcomes)
 
-  auc_pr <-  PRROC::pr.curve(predictions[outcomes==1], predictions[outcomes==0])
-  return(auc_pr$auc.integral)
+  auc_pr_ <-  PRROC::pr.curve(predictions[outcomes==1], predictions[outcomes==0])
+  return(auc_pr_$auc.integral)
 }
 
 #' Calculate the Precision for predictions
@@ -220,8 +220,8 @@ precision <- function(predictions, outcomes, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  precision <- caret::posPredValue(predictions_threshold, outcomes, positive = "1")
-  return(precision)
+  precision_ <- caret::posPredValue(predictions_threshold, outcomes, positive = "1")
+  return(precision_)
 
 }
 
@@ -250,8 +250,8 @@ recall <- function(predictions, outcomes, threshold){
   predictions_threshold <- ifelse(predictions >= threshold, 1, 0)
   predictions_threshold <- factor(predictions_threshold)
 
-  recall <- caret::sensitivity(predictions_threshold, outcomes,  positive = "1")
-  return(recall)
+  recall_ <- caret::sensitivity(predictions_threshold, outcomes,  positive = "1")
+  return(recall_)
 
 }
 
@@ -278,8 +278,8 @@ accuracy <- function(predictions, outcomes, threshold){
   predictions_threshold <- as.factor(ifelse(predictions >= threshold, 1, 0))
 
   CM <- caret::confusionMatrix(predictions_threshold, outcomes, mode = "prec_recall")
-  accuracy <- as.vector(CM$overall["Accuracy"])
-  return(accuracy)
+  accuracy_ <- as.vector(CM$overall["Accuracy"])
+  return(accuracy_)
 }
 
 

@@ -105,15 +105,15 @@ accuracy(predictions = fake_predictions_data$est.risk.score, outcomes = fake_pre
 The threshold_finder function finds the optimal threshold cut-off for predictions based on a passed in metric function.  All the passed in metric functions need to take the parameters predictions,outcomes,and threshold.  We will show how to find the optimal threshold to maximize precision
 
 ```{r}
-threshold_finder(precision, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
+#threshold_finder(precision, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
 ```
 We will show how to find the optimal threshold to maximize recall
 
 ```{r}
-threshold_finder(recall, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
+#threshold_finder(recall, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
 ```
 We will show how to find the optimal threshold to maximize accuracy
 
 ```{r}
-threshold_finder(accuracy, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
+#threshold_finder(accuracy, predictions = fake_predictions_data$est.risk.score, outcomes = fake_predictions_data$true.risk.bin)
 ```

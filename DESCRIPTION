@@ -12,6 +12,7 @@ Authors@R: c(
 Maintainer: The package maintainer <zarni.htet@mdrc.org>
 Description: This package contains a suite of predictive analytics tools developed by Center for Data Insights at MDRC.
     The tools are organically generated from different data models across different types of projects.
+Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
