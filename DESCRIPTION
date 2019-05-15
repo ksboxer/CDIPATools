@@ -24,6 +24,7 @@ Imports:
     pROC,
     caret,
     e1071,
-    readr
+    readr,
+    covr
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1

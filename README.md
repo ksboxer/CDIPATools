@@ -1,5 +1,6 @@
 ### Status
 [![Build Status](https://travis-ci.org/ksboxer/CDIPATools.png)](https://travis-ci.org/ksboxer/CDIPATools)
+[![Coverage status](https://codecov.io/gh/ksboxer/CDIPATools/branch/master/graph/badge.svg)](https://codecov.io/github/ksboxer/CDIPATools?branch=master)
 # A draft
 
 
