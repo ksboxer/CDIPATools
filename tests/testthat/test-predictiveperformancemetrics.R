@@ -29,3 +29,13 @@ test_that("TNR function",{
   expect_equal(tnr(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), .5)
   expect_equal(tnr(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[1,1]) / (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[1,1] + caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,1]))
 })
+
+test_that("AUC ROC function",{
+  expect_equal(auc_roc(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1)), as.numeric(pROC::auc(pROC::roc( c(0, 0, 1,1,1,1), c(1,0,1,0,0,1)))))
+  expect_equal(auc_roc(c(.56,.002,.1,.67,.3,.88), c(0, 0, 1,1,1,1)), as.numeric(pROC::auc(pROC::roc( c(0, 0, 1,1,1,1), c(.56,.002,.1,.67,.3,.88)))))
+})
+
+test_that("AUC PR function",{
+  expect_equal(auc_pr(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1)), PRROC::pr.curve(c(1,0,0,1), c(1,0))$auc.integral)
+  expect_equal(auc_pr(c(.56,.002,.1,.67,.3,.88), c(0, 0, 1,1,1,1)), PRROC::pr.curve(c(.1,.67,.3,.88), c(.56,.002))$auc.integral)
+})
