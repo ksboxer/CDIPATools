@@ -39,3 +39,15 @@ test_that("AUC PR function",{
   expect_equal(auc_pr(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1)), PRROC::pr.curve(c(1,0,0,1), c(1,0))$auc.integral)
   expect_equal(auc_pr(c(.56,.002,.1,.67,.3,.88), c(0, 0, 1,1,1,1)), PRROC::pr.curve(c(.1,.67,.3,.88), c(.56,.002))$auc.integral)
 })
+
+test_that("Precision function",{
+  expect_equal(precision(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), (2/3))
+  expect_equal(precision(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2]) / (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2] + caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,1]))
+  expect_equal(precision(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), as.numeric(caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)),  as.factor(c(0, 0, 1,1,1,1)), mode = "everything", positive = "1")$byClass["Precision"]))
+})
+
+test_that("Recall function",{
+  expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), .5)
+  expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2]) / (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2] + caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[1,2]))
+  expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), as.numeric(caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)),  as.factor(c(0, 0, 1,1,1,1)), mode = "everything", positive = "1")$byClass["Recall"]))
+})
