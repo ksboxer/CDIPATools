@@ -3,4 +3,5 @@ cache: packages
 r_github_packages:
   - r-lib/covr
 after_success:
-  - Rscript -e 'covr::codecov()'
+  Rscript -e 'library(testthat);res<-test_dir("CDIPATools/tests/testthat")'
+  Rscript -e 'library(covr); package_coverage("CDIPATools")'
