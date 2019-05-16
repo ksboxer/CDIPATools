@@ -53,3 +53,9 @@ test_that("Recall function",{
   expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2]) / (caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[2,2] + caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "everything")$table[1,2]))
   expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), as.numeric(caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)),  as.factor(c(0, 0, 1,1,1,1)), mode = "everything", positive = "1")$byClass["Recall"]))
 })
+
+test_that("Accuracy function",{
+  expect_equal(accuracy(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), .5)
+  expect_equal(accuracy(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), as.vector(caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)), as.factor(c(0, 0, 1,1,1,1)), mode = "prec_recall")$overall["Accuracy"]))
+  #expect_equal(recall(c(1,0,1,0,0,1), c(0, 0, 1,1,1,1), .5), as.numeric(caret::confusionMatrix(as.factor(c(1,0,1,0,0,1)),  as.factor(c(0, 0, 1,1,1,1)), mode = "everything", positive = "1")$byClass["Recall"]))
+})
