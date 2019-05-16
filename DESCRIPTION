@@ -25,6 +25,7 @@ Imports:
     caret,
     e1071,
     readr,
-    covr
+    covr,
+    DT
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1
