@@ -1,5 +1,7 @@
-context("Testing Predictive Performance Metrics Functions")
 library(CDIPATools)
+library(testthat)
+context("Testing Predictive Performance Metrics Functions")
+
 
 test_that("Confusion Metric works properly -- specifically testing thresholding",{
   expect_equal(confusion_matrix(c(1,0,1), c(0, 0, 1), .5), caret::confusionMatrix(as.factor(c(1,0,1)), as.factor(c(0, 0, 1)), mode = "everything"))
